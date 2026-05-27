@@ -1,5 +1,9 @@
 # Unpinned blobs from KJ5-OP-user 12 SP1A.210812.016 240607V1280 release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
