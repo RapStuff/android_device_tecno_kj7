@@ -333,7 +333,6 @@ vendor/lib64/libmtkcam_sysutils.so
 vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/libmtkisp_metadata.so
-vendor/lib64/libnbaio_mono.so
 vendor/lib64/libpq_prot.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/fake_serial_yuv_IdxMgr.so
@@ -385,7 +384,6 @@ vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so
 
 # Display firmware
 vendor/firmware/chipone_ts_fw_00.bin
@@ -926,7 +924,6 @@ vendor/lib64/libdre.so
 vendor/lib64/libdtsdsec.so
 vendor/lib64/libdts-eagle-shared.so
 vendor/lib64/libdynamiclog.so
-vendor/lib64/libeffects.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libfp_ext_svc2.so
 vendor/lib64/libfsmaudio.so
@@ -1057,6 +1054,3 @@ vendor/lib/libMtkOmxAlacDec.so
 vendor/lib/libMtkOmxApeDec.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
-vendor/lib/libopus.so
-vendor/lib/libvorbisidec.so
-vendor/lib/libvpx.so
