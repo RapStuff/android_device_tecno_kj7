@@ -871,7 +871,6 @@ vendor/lib/android.hardware.sensors@1.0.so
 vendor/lib/libcodec2_soft_common.so
 vendor/lib/libcodec2_vndk.so
 vendor/lib/libdrm.so
-vendor/lib/libhidltransport.so
 vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libsfplugin_ccodec_utils.so
