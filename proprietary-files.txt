@@ -867,4 +867,3 @@ vendor/bin/hw/vendor.transsion.performance.sched@1.0-service
 vendor/etc/init/vendor.transsion.performance.sched@1.0-service.rc
 vendor/lib64/vendor.transsion.performance.sched@1.0.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
