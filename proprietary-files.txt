@@ -1248,3 +1248,7 @@ vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib/libpixelflinger.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.1.so
+vendor/lib64/libwvhidl.so
+vendor/lib/libwvhidl.so
+vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib/vendor.mediatek.hardware.audio@7.1.so
