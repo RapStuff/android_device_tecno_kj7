@@ -82,6 +82,12 @@ PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.0-impl-mock
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
+    vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.vendor
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
