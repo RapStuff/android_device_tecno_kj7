@@ -848,23 +848,12 @@ vendor/etc/init/vendor.transsion.performance.sched@1.0-service.rc
 vendor/lib64/vendor.transsion.performance.sched@1.0.so
 
 # Missing vendor deps (added by full scan)
-vendor/lib64/android.hardware.audio.common@7.0-util.so
-vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/android.hardware.power-service-mediatek.so
-vendor/lib64/android.hardware.secure_element@1.0.so
-vendor/lib64/android.hardware.secure_element@1.1.so
-vendor/lib64/android.hardware.secure_element@1.2.so
-vendor/lib64/android.hardware.tetheroffload.config@1.0.so
-vendor/lib64/android.hardware.tetheroffload.control@1.0.so
-vendor/lib64/android.hardware.tetheroffload.control@1.1.so
 vendor/lib64/libaipe_bokeh.so
 vendor/lib64/libamipengine.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_night_hawk.so
 vendor/lib64/libarcsoft_torch_portrait_night.so
-vendor/lib64/libavservices_minijail_vendor.so
-vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcolorlevel.so
 vendor/lib64/libdenoise.so
 vendor/lib64/libeffect_hal.so
@@ -879,11 +868,8 @@ vendor/lib64/libmtkcam_diputils.so
 vendor/lib64/libmtkcam_featureutils.so
 vendor/lib64/libNvLutEffect.so
 vendor/lib64/libportrait_repair_ppl3_ocl.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib64/librilutils.so
 vendor/lib64/libsegmentionPre.so
 vendor/lib64/libsegmention.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsmartdetector.so
 vendor/lib64/libstblur_capture_api.so
 vendor/lib64/libst_mobile.so
@@ -892,9 +878,3 @@ vendor/lib64/libtflite_native_gainference.so
 vendor/lib64/libtflite_native_inference.so
 vendor/lib64/libtflite_native_seginference.so
 vendor/lib64/libtranssion_bodybeauty.so
-vendor/lib/android.hardware.audio.common@7.0-util.so
-vendor/lib/libavservices_minijail_vendor.so
-vendor/lib/libcodec2_soft_common.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib/librilutils.so
-vendor/lib/libsensorndkbridge.so
