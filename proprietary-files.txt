@@ -175,6 +175,8 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 # Camera
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
+vendor/bin/lib3a.ccu.dm
+vendor/bin/lib3a.ccu.pm
 vendor/firmware/lib3a.ccu
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
