@@ -888,9 +888,6 @@ vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_night_hawk.so
 vendor/lib64/libarcsoft_torch_portrait_night.so
 vendor/lib64/libavservices_minijail_vendor.so
-vendor/lib64/libcodec2_hidl@1.0.so
-vendor/lib64/libcodec2_hidl@1.1.so
-vendor/lib64/libcodec2_hidl@1.2.so
 vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcolorlevel.so
 vendor/lib64/libdenoise.so
@@ -899,8 +896,6 @@ vendor/lib64/libeyedetector.so
 vendor/lib64/libfacedetector.so
 vendor/lib64/libfacesattribute.so
 vendor/lib64/libitdfacebeauty.so
-vendor/lib64/libkeymaster41.so
-vendor/lib64/libkeymaster4.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmtkcam_3rdparty.thread.so
 vendor/lib64/libmtkcam_device3_hidl.so
@@ -924,9 +919,6 @@ vendor/lib64/libtranssion_bodybeauty.so
 vendor/lib/android.hardware.audio.common@7.0-util.so
 vendor/lib/libalsautils.so
 vendor/lib/libavservices_minijail_vendor.so
-vendor/lib/libcodec2_hidl@1.0.so
-vendor/lib/libcodec2_hidl@1.1.so
-vendor/lib/libcodec2_hidl@1.2.so
 vendor/lib/libcodec2_soft_common.so
 vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib/librilutils.so
