@@ -305,7 +305,6 @@ vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libpq_prot.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/fake_serial_yuv_IdxMgr.so
 vendor/lib64/gc32e1_mipi_raw_IdxMgr.so
