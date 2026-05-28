@@ -130,6 +130,14 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayKJ5 \
+    SystemUIOverlayKJ5 \
+    WifiResOverlayKJ5
+
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
@@ -193,9 +201,6 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     ueventd.mt6768.rc
-
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
