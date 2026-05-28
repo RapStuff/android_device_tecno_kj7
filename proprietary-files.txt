@@ -542,8 +542,12 @@ vendor/bin/mcDriverDaemon
 vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
 vendor/lib/libMcClient.so
+vendor/lib/libtneclient.so
+vendor/lib/libtranlog.so
 vendor/lib/libthha.so
 vendor/lib64/libMcClient.so
+vendor/lib64/libtneclient.so
+vendor/lib64/libtranlog.so
 vendor/lib64/libthha.so
 vendor/lib64/vendor.trustonic.tee.tui@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.0.so

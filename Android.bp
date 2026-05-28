@@ -6,6 +6,7 @@
 
 soong_namespace {
     imports: [
+        "hardware/shadowbyte/libtranlog",
         "vendor/mediatek/ims",
     ],
 }

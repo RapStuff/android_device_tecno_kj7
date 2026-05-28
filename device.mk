@@ -370,7 +370,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/mediatek \
-    hardware/mediatek/libmtkperf_client
+    hardware/mediatek/libmtkperf_client \
+    hardware/shadowbyte \
+    hardware/shadowbyte/libtranlog
 
 # Thermal
 PRODUCT_PACKAGES += \
