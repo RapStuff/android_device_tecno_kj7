@@ -40,6 +40,14 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'),
     'vendor/lib64/libeffect_hal.so': blob_fixup()
         .replace_needed('libc++_shared.so', 'libc++.so'),
+    'vendor/lib64/libkeystore-engine-wifi-hidl.so': blob_fixup()
+        .replace_needed('android.system.keystore2-V1-ndk_platform.so', 'android.system.keystore2-V1-ndk.so'),
+    (
+        'vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so',
+        'vendor/lib64/egl/libGLES_mali.so',
+        'vendor/lib64/arm.graphics-V1-ndk_platform.so',
+    ): blob_fixup()
+        .replace_needed('arm.graphics-V1-ndk_platform.so', 'arm.graphics-V1-ndk.so'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),

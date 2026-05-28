@@ -432,7 +432,7 @@ vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/hwcomposer.mt6768.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
-vendor/lib64/arm.graphics-V1-ndk_platform.so
+vendor/lib64/arm.graphics-V1-ndk_platform.so:vendor/lib64/arm.graphics-V1-ndk.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
@@ -1056,3 +1056,4 @@ vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libtneclient.so
 vendor/lib64/libtneclient.so
 vendor/lib64/libtrancamJsonConvertor.so
+vendor/lib/libmp3dec_mtk.so
