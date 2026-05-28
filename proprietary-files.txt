@@ -329,6 +329,14 @@ vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin
 vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin
 vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin
 vendor/firmware/WMT_SOC.cfg
+vendor/firmware/fm_cust.cfg
+vendor/firmware/fs1599.fsm
+vendor/firmware/fs1801.fsm
+vendor/firmware/hdl_firmware_01.img
+vendor/firmware/hdl_firmware_03.img
+vendor/firmware/mt6631_fm_v1_coeff.bin
+vendor/firmware/mt6631_fm_v1_patch.bin
+vendor/firmware/remoteproc_scp
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 
 # Light
@@ -361,6 +369,19 @@ vendor/firmware/gt9886_cfg_90hz6785.bin
 vendor/firmware/gt9886_cfg_90hz6877.bin
 vendor/firmware/gt9886_cfg_90hz6885.bin
 vendor/firmware/gt9886_cfg_gt9885v1.bin
+vendor/firmware/gt9886_firmware_6781v01.bin
+vendor/firmware/gt9886_firmware_6785a4.bin
+vendor/firmware/gt9886_firmware_6785ae.bin
+vendor/firmware/gt9886_firmware_6853v01.bin
+vendor/firmware/gt9886_firmware_6873v01.bin
+vendor/firmware/gt9886_firmware_6877af.bin
+vendor/firmware/gt9886_firmware_6877v01.bin
+vendor/firmware/gt9886_firmware_6885a1.bin
+vendor/firmware/gt9886_firmware_6885af.bin
+vendor/firmware/gt9886_firmware_6885b0.bin
+vendor/firmware/gt9886_firmware_6885b1.bin
+vendor/firmware/gt9886_firmware_6885v01.bin
+vendor/firmware/gt9886_firmware_6893v01.bin
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
@@ -513,6 +534,7 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 
 # Thermal
+vendor/etc/init.insmod.mt6768.cfg
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/thermal
 vendor/bin/thermalloadalgod
@@ -690,6 +712,12 @@ vendor/lib64/hw/sensors.mt6768.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 vendor/lib64/libsensor_custom.so
+
+# ODM VINTF
+vendor/odm/etc/vintf/manifest_dsds.xml
+vendor/odm/etc/vintf/manifest_qsqs.xml
+vendor/odm/etc/vintf/manifest_ss.xml
+vendor/odm/etc/vintf/manifest_tsts.xml
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
