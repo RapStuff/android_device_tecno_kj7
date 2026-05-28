@@ -58,7 +58,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
-    'vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service': blob_fixup()
+    (
+        'vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service',
+        'vendor/lib64/android.hardware.power-service-mediatek.so',
+    ): blob_fixup()
         .replace_needed('android.hardware.power-V2-ndk_platform.so', 'android.hardware.power-V2-ndk.so'),
     (
         'vendor/bin/mnld',

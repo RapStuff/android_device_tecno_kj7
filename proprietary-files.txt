@@ -1246,3 +1246,5 @@ vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib/libpixelflinger.so
+vendor/lib64/vendor.trustonic.tee@1.0.so
+vendor/lib64/vendor.trustonic.tee@1.1.so
