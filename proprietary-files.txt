@@ -881,7 +881,6 @@ vendor/lib64/android.hardware.tetheroffload.config@1.0.so
 vendor/lib64/android.hardware.tetheroffload.control@1.0.so
 vendor/lib64/android.hardware.tetheroffload.control@1.1.so
 vendor/lib64/libaipe_bokeh.so
-vendor/lib64/libalsautils.so
 vendor/lib64/libamipengine.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_low_light_hdr.so
@@ -917,7 +916,6 @@ vendor/lib64/libtflite_native_inference.so
 vendor/lib64/libtflite_native_seginference.so
 vendor/lib64/libtranssion_bodybeauty.so
 vendor/lib/android.hardware.audio.common@7.0-util.so
-vendor/lib/libalsautils.so
 vendor/lib/libavservices_minijail_vendor.so
 vendor/lib/libcodec2_soft_common.so
 vendor/lib/libprotobuf-cpp-lite-3.9.1.so
