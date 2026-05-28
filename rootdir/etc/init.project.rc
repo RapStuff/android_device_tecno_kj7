@@ -8,6 +8,9 @@ on init
     mkdir /storage/usbotg 0700 root root
 
 on post-fs-data
+# Fingerprint
+    mkdir /data/vendor/fpsensor 0770 system system
+    mkdir /data/vendor/goodix 0777 system system
 
 #Camera
     chmod 0660 /dev/MAINAF
@@ -77,3 +80,10 @@ on boot
 	write /sys/fs/f2fs/${dev.mnt.dev.data}/extension_list [h]vdex
 	write /sys/fs/f2fs/${dev.mnt.dev.data}/extension_list [h]so
 	# SPD: LHLNHL-623 set file type to f2fs segments: apk->hot odex->hot vdex->hot so->hot by chenyu.sun 20230612 end
+
+# Fingerprint
+on boot
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+    chown system system /dev/fpsensor
+    chmod 0660 /dev/fpsensor
