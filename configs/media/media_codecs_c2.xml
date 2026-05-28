@@ -15,6 +15,7 @@
 -->
 
 <MediaCodecs>
+    <!-- USD: add Dolby Atmos Support by weicheng.liao 20240819 DUKE ADD: start don't remove it -->
     <Settings>
         <!-- disable TV and telephony domains by default. These must be opted in by OEMs -->
         <Domain name="telephony" enabled="false" />
@@ -103,6 +104,10 @@
             <Alias name="OMX.MTK.AUDIO.DECODER.ALAC" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
+        <MediaCodec name="c2.mtk.wma.decoder" type="audio/x-ms-wma">
+            <Alias name="OMX.MTK.AUDIO.DECODER.WMA" />
+            <Limit name="channel-count" max="2" />
+        </MediaCodec>
         <MediaCodec name="c2.mtk.mp3.decoder" type="audio/mpeg" rank="5">
             <Alias name="OMX.MTK.AUDIO.DECODER.MP3" />
             <Limit name="channel-count" max="2" />
@@ -113,52 +118,75 @@
             <Alias name="OMX.MTK.VIDEO.DECODER.MPEG4" />
             <Limit name="size" min="16x16" max="2048x1088" />
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1920x1088" value="30" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 start -->
+            <Limit name="concurrent-instances" max="16" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 end -->
+            <Limit name="performance-point-1920x1088" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.h263.decoder" type="video/3gpp" >
             <Alias name="OMX.MTK.VIDEO.DECODER.H263" />
             <Limit name="size" min="128x96" max="1408x1152" />
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1280x720" value="30" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 start -->
+            <Limit name="concurrent-instances" max="16" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 end -->
+            <Limit name="performance-point-1280x720" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder" type="video/avc" >
             <Alias name="OMX.MTK.VIDEO.DECODER.AVC" />
+            <!-- BSP: modify OSBLSDEV-2788 by hong.yue 20211227 start -->
+            <!-- BSP: modify XLBYQHLJEL-1525 by hong.yue 20211222 start -->
             <Limit name="size" min="64x64" max="3840x2160" />
+            <!-- BSP: modify XLBYQHLJEL-1525 by hong.yue 20211222 end -->
+            <!-- BSP: modify OSBLSDEV-2788 by hong.yue 20211227 end -->
             <Quirk name="wants-NAL-fragments" />
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="32" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 start -->
+            <Limit name="concurrent-instances" max="16" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 end -->
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder.secure" type="video/avc" >
             <Alias name="OMX.MTK.VIDEO.DECODER.AVC.secure" />
-            <Limit name="size" min="64x64" max="2048x1088" />
+            <Limit name="size" min="64x64" max="1920x1088" />
             <Quirk name="wants-NAL-fragments" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="1" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" >
             <Alias name="OMX.MTK.VIDEO.DECODER.HEVC" />
-            <Limit name="size" min="16x16" max="2400x1088" />
+            <!-- BSP: modify OSBLSDEV-2788 by hong.yue 20211227 start -->
+            <!-- BSP: modify XLBYQHLJEL-1525 by hong.yue 20211222 start -->
+            <Limit name="block-size" value="16x16" />
+            <Limit name="size" min="16x16" max="3840x2160" />
+            <!-- BSP: modify XLBYQHLJEL-1525 by hong.yue 20211222 end -->
+            <!-- BSP: modify OSBLSDEV-2788 by hong.yue 20211227 end -->
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1920x1088" value="30" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 start -->
+            <Limit name="concurrent-instances" max="16" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 end -->
+            <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vpx.decoder" type="video/x-vnd.on2.vp8" >
             <Alias name="OMX.MTK.VIDEO.DECODER.VPX" />
             <Limit name="size" min="16x16" max="1920x1088" />
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="32" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 start -->
+            <Limit name="concurrent-instances" max="16" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 end -->
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder" type="video/x-vnd.on2.vp9" >
             <Alias name="OMX.MTK.VIDEO.DECODER.VP9" />
-            <Limit name="size" min="16x16" max="3840x2160" />
+            <!-- BSP: modify XLBYQHLJEL-1525 by hong.yue 20211222 start -->
+            <Limit name="size" min="16x16" max="2560x1440" />
+            <!-- BSP: modify XLBYQHLJEL-1525 by hong.yue 20211222 end -->
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="32" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 start -->
+            <Limit name="concurrent-instances" max="16" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 end -->
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder.secure" type="video/x-vnd.on2.vp9" >
@@ -168,15 +196,25 @@
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="1" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.mpeg2.decoder" type="video/mpeg2" >
             <Alias name="OMX.MTK.VIDEO.DECODER.MPEG2" />
             <Limit name="size" min="16x16" max="2048x1088" />
             <Feature name="adaptive-playback"/>
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 start -->
+            <Limit name="concurrent-instances" max="16" />
+            <!-- BSP: modify SLMPYAEE-304 by hong.yue 20220425 end -->
+            <Limit name="performance-point-1920x1088" value="60" />
+        </MediaCodec>
+        <!-- BSP: del XLQEHBY-1835 by hong.yue 20220209 start -->
+        <!--MediaCodec name="c2.mtk.vc1.decoder" type="video/x-ms-wmv" >
+            <Alias name="OMX.MTK.VIDEO.DECODER.VC1" />
+            <Limit name="size" min="16x16" max="1920x1088" />
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-1920x1088" value="30" />
-        </MediaCodec>
+        </MediaCodec-->
+        <!-- BSP: del XLQEHBY-1835 by hong.yue 20220209 end -->
         <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
             <Alias name="OMX.google.mpeg4.decoder" />
             <!-- profiles and levels:  ProfileSimple : Level3 -->
@@ -257,6 +295,15 @@
             <Limit name="bitrate" range="1-20000000" />
             <Feature name="adaptive-playback" />
         </MediaCodec>
+        <MediaCodec name="c2.android.av1-dav1d.decoder" type="video/av01" update="true">
+            <Limit name="size" min="2x2" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-8160" /><!-- max 1920x1088 -->
+            <Limit name="blocks-per-second" range="1-244800" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
     </Decoders>
     <Encoders>
         <MediaCodec name="c2.android.aac.encoder" type="audio/mp4a-latm">
@@ -317,25 +364,35 @@
             <Limit name="alignment" value="16x16" />
             <Limit name="block-size" value="16x16" />
             <Limit name="concurrent-instances" max="10" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-2560x1440" value="30" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+            <!-- modify CH6IH6921T-651 by liming.bai 20230607 start -->
+            <!--Feature name="bitrate-modes" value="VBR,CBR,CQ" / -->
+            <!-- modify CH6IH6921T-651 by liming.bai 20230607 end -->
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.encoder.secure" type="video/avc" >
             <Limit name="size" min="128x128" max="1920x1088" />
             <Limit name="alignment" value="16x16" />
             <Limit name="block-size" value="16x16" />
             <Limit name="concurrent-instances" max="10" />
-            <Limit name="performance-point-1920x1088" value="30" />
+            <Limit name="performance-point-2560x1440" value="30" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
             <Feature name ="special-codec" required="true" />
+            <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.encoder" type="video/hevc" >
             <Alias name="OMX.MTK.VIDEO.ENCODER.HEVC" />
-            <Limit name="size" min="160x128" max="2400x1088" />
+            <Limit name="size" min="160x128" max="2560x1440" />
             <Limit name="alignment" value="16x16" />
             <Limit name="block-size" value="16x16" />
             <Limit name="quality" range="0-100" default="50" />
             <Limit name="concurrent-instances" max="10" />
             <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
-            <Limit name="performance-point-1920x1088" value="30" />
+            <Limit name="performance-point-2560x1440" value="30" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
         </MediaCodec>
         <MediaCodec name="c2.android.h263.encoder" type="video/3gpp" update="true">
             <Alias name="OMX.google.h263.encoder" />
@@ -399,16 +456,16 @@
             <Limit name="bitrate" range="1-40000000" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
         </MediaCodec>
-        <MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true" enabled="false" minsdk="34">
+        <!--<MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true" enabled="false" minsdk="34">
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="size" min="2x2" max="720x720" />
-            <Limit name="block-count" range="1-1350" /> <!-- max 720x480 -->
-            <Limit name="bitrate" range="1-5000000" />
+            <Limit name="block-count" range="1-1350" />--> <!-- max 720x480 -->
+            <!--<Limit name="bitrate" range="1-5000000" />
             <Limit name="quality" range="0-100"  default="80" />
             <Limit name="complexity" range="0-5"  default="0" />
             <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
             <Attribute name="software-codec" />
-        </MediaCodec>
+        </MediaCodec>-->
     </Encoders>
 </MediaCodecs>
