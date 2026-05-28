@@ -1,1 +1,5 @@
-# Placeholder - extend as needed
+# NFC
+/dev/nq-nci                                                                                            u:object_r:nfc_device:s0
+
+# Widevine
+/vendor/bin/hw/android\.hardware\.drm-service(-lazy)?\.widevine                                        u:object_r:hal_drm_widevine_exec:s0
