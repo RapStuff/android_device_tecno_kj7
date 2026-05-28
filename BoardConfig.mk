@@ -112,6 +112,7 @@ BOARD_DTB_OFFSET := 0x0bc08000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += androidboot.serialconsole=0
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Prebuilt GKI kernel
 TARGET_NO_KERNEL_OVERRIDE := true
