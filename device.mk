@@ -223,6 +223,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayKJ5 \
     SystemUIOverlayKJ5 \
+    TetheringResOverlayKJ5 \
     WifiResOverlayKJ5
 
 DEVICE_PACKAGE_OVERLAYS += \
