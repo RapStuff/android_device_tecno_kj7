@@ -58,7 +58,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.effect@7.0-impl:32 \
-    android.hardware.audio.service
+    android.hardware.audio.service \
+    android.hardware.soundtrigger@2.3-impl:32
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default:32 \
@@ -66,14 +67,28 @@ PRODUCT_PACKAGES += \
     audio.primary.default \
     audio.r_submix.default \
     audio_policy.stub:32 \
+    libopus.vendor \
+    audioclient-types-aidl-cpp.vendor \
+    libaudioroute.vendor \
     libaudiofoundation.vendor \
+    libbundlewrapper \
     libbluetooth_audio_session \
-    libunwindstack.vendor \
+    libaudiopreprocessing \
     libalsautils \
+    libdownmix \
+    libeffectproxy \
     libnbaio_mono \
     libtinycompress \
     libdynproc \
-    libhapticgenerator
+    libhapticgenerator \
+    libldnhncr \
+    libreverbwrapper \
+    libprocessgroup.vendor \
+    libunwindstack.vendor
+
+PRODUCT_PACKAGES += \
+    DSPVolumeSynchronizer \
+    MtkInCallService
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -83,20 +98,28 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
+# AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth-service.mediatek \
     android.hardware.bluetooth.audio-impl:32 \
     android.hardware.bluetooth@1.1.vendor:32 \
     libbluetooth_audio_session:32
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.6.vendor
 
 PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
+    libcamera_metadata_shim \
+    libdng_sdk.vendor \
     libexif.vendor \
+    libpiex \
     libpng.vendor
 
 # Cgroup
@@ -117,21 +140,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libutilscallstack.vendor
 
+PRODUCT_PACKAGES += \
+    ANGLE
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey
+    com.android.hardware.drm.clearkey
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
 PRODUCT_PACKAGES += \
-    fastbootd \
-    android.hardware.fastboot@1.0-impl-mock
+    android.hardware.fastboot-service.example_recovery \
+    fastbootd:64
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -147,16 +173,16 @@ PRODUCT_COPY_FILES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V1-ndk.vendor
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@1.1.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss-V1-ndk.vendor:64
 
 PRODUCT_PACKAGES += \
     libcurl.vendor \
@@ -164,7 +190,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl:64 \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
