@@ -23,6 +23,8 @@ namespace_imports = [
     'hardware/google/pixel',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
+    'hardware/shadowbyte',
+    'hardware/shadowbyte/libtranlog',
     'vendor/mediatek/ims',
 ]
 

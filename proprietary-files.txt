@@ -174,6 +174,7 @@ vendor/lib/libcam3_transerverengine.so
 vendor/lib64/libcam3_transerverengine.so
 vendor/lib64/libcam3_tranwatchdogmonitor.so
 vendor/lib64/libcam_tranvipscheduler.so
+vendor/lib64/libtrancamJsonConvertor.so
 vendor/lib64/libtrancam_filelockmgr.so
 vendor/lib64/libTranExtImgProc.so
 vendor/lib64/libTranArcFilter.so
@@ -572,6 +573,9 @@ vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal_hal.so
 
+vendor/lib/libtneclient.so
+vendor/lib/libtranlog.so
+vendor/lib64/libtneclient.so
 # Trusted Execution Environment (TEE) - Trustonic
 vendor/bin/hw/vendor.trustonic.tee@1.1-service
 vendor/bin/mcDriverDaemon
