@@ -89,7 +89,7 @@
     </hal>
     <hal format="hidl">
     <hal format="hidl">
-         <name>android.hardware.tetheroffload.config</name>
+        <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IOffloadConfig/default</fqname>
     </hal>
@@ -168,7 +168,7 @@
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mtkpower</name>
-         <transport>hwbinder</transport>
+        <transport>hwbinder</transport>
         <fqname>@1.2::IMtkPerf/default</fqname>
         <fqname>@1.2::IMtkPower/default</fqname>
     </hal>
