@@ -829,4 +829,10 @@
         <MaxValue>1</MaxValue>
         <MinValue>0</MinValue>
     </CMD>
+    <CMD name="PERF_RES_SCHED_BOOST" id="0x01410000">
+        <Entry path="/proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>6</MaxValue>
+        <MinValue>0</MinValue>
+    </CMD>
 </CONTABLE>
