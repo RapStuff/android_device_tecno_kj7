@@ -497,14 +497,16 @@ vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
-# Tether Offload
-vendor/bin/hw/tetheroffloadservice
+# NetD Agent
 vendor/bin/netdagent
 vendor/etc/init/netdagent.rc
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
 vendor/etc/init/tetheroffloadservice.rc
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
