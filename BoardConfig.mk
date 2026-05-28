@@ -240,8 +240,8 @@ ODM_MANIFEST_SKUS += nfc
 ODM_MANIFEST_NFC_FILES := $(CONFIGS_PATH)/vintf/manifest_nfc.xml
 DEVICE_MATRIX_FILE += $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    vendor/lineage/config/device_framework_matrix.xml \
-    $(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml
+    $(CONFIGS_PATH)/vintf/device_framework_compatibility_matrix.xml \
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
 include vendor/tecno/KJ5/BoardConfigVendor.mk
