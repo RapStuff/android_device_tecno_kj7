@@ -832,6 +832,3 @@ vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin
 vendor/firmware/wifi.cfg
 
 # 32-bit vendor interface libs
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
