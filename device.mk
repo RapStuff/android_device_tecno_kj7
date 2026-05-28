@@ -304,8 +304,7 @@ PRODUCT_PACKAGES += \
     MtkInCallService
 
 PRODUCT_PACKAGES += \
-    libui_shim \
-    libshim_sink
+    libui_shim
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -325,7 +324,6 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libshim_sensors \
     libsensorndkbridge \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.1.vendor \
