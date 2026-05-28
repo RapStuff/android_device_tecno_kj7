@@ -1053,3 +1053,6 @@ vendor/lib/libMtkOmxAlacDec.so
 vendor/lib/libMtkOmxApeDec.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
+vendor/lib/libtneclient.so
+vendor/lib64/libtneclient.so
+vendor/lib64/libtrancamJsonConvertor.so
