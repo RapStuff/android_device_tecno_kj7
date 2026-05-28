@@ -14,7 +14,7 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.sensors@2.1-service.multihal",
+    name: "android.hardware.sensors@2.1-service.kj5-multihal",
     defaults: [
         "hidl_defaults",
     ],
@@ -22,9 +22,11 @@ cc_binary {
     relative_install_path: "hw",
     srcs: [
         "service.cpp",
+        "HalProxy.cpp",
+        "HalProxyCallback.cpp",
     ],
-    init_rc: ["android.hardware.sensors@2.1-service-multihal.rc"],
-    vintf_fragments: ["android.hardware.sensors@2.1-multihal.xml"],
+    init_rc: ["android.hardware.sensors@2.1-service.kj5-multihal.rc"],
+    vintf_fragments: ["android.hardware.sensors@2.1-kj5-multihal.xml"],
     header_libs: [
         "android.hardware.sensors@2.X-shared-utils",
     ],
