@@ -204,6 +204,9 @@ debug.sf.earlyGl.app.duration=30100000
 # Trusted Execution Environment (TEE)
 ro.vendor.mtk_trustonic_tee_support=1
 
+# UI
+is_expressive_design_enabled=true
+
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
