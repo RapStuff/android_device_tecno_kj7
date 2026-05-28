@@ -900,3 +900,8 @@ vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.1.so
+vendor/lib64/libbwc.so
+vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib64/libmtkcam_device3_hal.so
+vendor/lib64/libmtkcam_device3_hidlutils.so
