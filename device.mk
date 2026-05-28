@@ -303,9 +303,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MtkInCallService
 
-PRODUCT_PACKAGES += \
-    libui_shim
-
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
@@ -324,7 +321,6 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libsensorndkbridge \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.1.vendor \
     android.frameworks.sensorservice@1.0.vendor \
