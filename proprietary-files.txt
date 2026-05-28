@@ -350,6 +350,10 @@ vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 
+# Display firmware
+vendor/firmware/chipone_ts_fw_00.bin
+vendor/firmware/chipone_ts_fw_02.bin
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
