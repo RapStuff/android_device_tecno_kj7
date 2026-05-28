@@ -129,3 +129,6 @@ tr_carrier /tr_carrier ext4 ro wait,slotselect,logical,first_stage_mount,avb_key
 
 tr_product /tr_product erofs ro wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/tran_avb.pubkey,nofail
 tr_preload /tr_preload erofs ro wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/tran_avb.pubkey,nofail
+
+# ZRAM
+/dev/block/zram0              none            swap    defaults zramsize=50%,max_comp_streams=8,zram_backingdev_size=512M

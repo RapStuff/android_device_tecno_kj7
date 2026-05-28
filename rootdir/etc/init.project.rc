@@ -5,6 +5,9 @@ on early-init
 
 import /vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
+on boot
+    stop console
+
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root
