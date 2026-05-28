@@ -1252,3 +1252,6 @@ vendor/lib64/libwvhidl.so
 vendor/lib/libwvhidl.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
+vendor/lib64/libcomposer_ext.so
