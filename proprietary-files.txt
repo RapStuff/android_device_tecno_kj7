@@ -826,7 +826,7 @@ vendor/lib64/libviamipc-ril.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
-# Radio (IMS)
+# Radio (IMS) - From 250115V1871
 vendor/bin/hw/vtservice_hidl
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
