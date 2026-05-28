@@ -192,7 +192,7 @@ PRODUCT_PACKAGES += \
     init.mt6768.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    ueventd.rc
+    ueventd.mt6768.rc
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
