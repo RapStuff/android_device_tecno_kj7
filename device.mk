@@ -58,8 +58,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.effect@7.0-impl:32 \
-    android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl:32
+    android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default:32 \
@@ -103,7 +102,6 @@ TARGET_EXCLUDES_AUDIOFX := true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth-service.mediatek \
     android.hardware.bluetooth.audio-impl:32 \
     android.hardware.bluetooth@1.1.vendor:32 \
     libbluetooth_audio_session:32
@@ -150,14 +148,14 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 PRODUCT_PACKAGES += \
-    com.android.hardware.drm.clearkey
+    android.hardware.drm-service.clearkey
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot-service.example_recovery \
+    android.hardware.fastboot@1.0-impl-mock \
     fastbootd:64
 
 # Fingerprint
