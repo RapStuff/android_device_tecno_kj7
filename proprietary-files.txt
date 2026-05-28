@@ -1014,7 +1014,6 @@ vendor/lib64/libwapi.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so
 vendor/lib64/libwpa_client.so
-vendor/lib64/libz_stable.so
 vendor/lib64/meta_wifi_data.so
 vendor/lib64/nwk_opt_imp.so
 vendor/lib64/pblcfake_serial_yuv_tuning.so
