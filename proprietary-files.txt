@@ -884,7 +884,6 @@ vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libaacvibrator.so
 vendor/lib64/libacdk.so
 vendor/lib64/libadpcmdec_mtk.so
-vendor/lib64/libalsautils.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libappgamepq.so
 vendor/lib64/libapu_mdw.so
@@ -895,7 +894,6 @@ vendor/lib64/libarmnn.so
 vendor/lib64/libasn1c_core.so
 vendor/lib64/libasn1c_mapi.so
 vendor/lib64/libasn1c_mdmi.so
-vendor/lib64/libavservices_minijail_vendor.so
 vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbluetooth_hw_test.so
@@ -911,11 +909,7 @@ vendor/lib64/libcam.lcs.so
 vendor/lib64/libcharon-ss.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
-vendor/lib64/libcodec2_hidl@1.0.so
-vendor/lib64/libcodec2_hidl@1.1.so
-vendor/lib64/libcodec2_hidl@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
-vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_soft_mtk_alacdec.so
 vendor/lib64/libcodec2_soft_mtk_apedec.so
 vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
@@ -994,16 +988,13 @@ vendor/lib64/libpixelflinger.so
 vendor/lib64/libpkm.so
 vendor/lib64/libpnpmgr.so
 vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/libqmc6308.so
 vendor/lib64/libreference-ril.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/librgbwlightsensor.so
 vendor/lib64/libril.so
-vendor/lib64/librilutils.so
 vendor/lib64/librmsclib1.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsimaka.so
 vendor/lib64/libsimlock.so
 vendor/lib64/libsimmelock.so
