@@ -854,7 +854,6 @@ vendor/lib64/android.hardware.power-service-mediatek.so
 vendor/lib64/android.hardware.secure_element@1.0.so
 vendor/lib64/android.hardware.secure_element@1.1.so
 vendor/lib64/android.hardware.secure_element@1.2.so
-vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
 vendor/lib64/android.hardware.tetheroffload.config@1.0.so
 vendor/lib64/android.hardware.tetheroffload.control@1.0.so
 vendor/lib64/android.hardware.tetheroffload.control@1.1.so
