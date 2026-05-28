@@ -515,25 +515,16 @@ vendor/lib64/libifcutils_mtk.so
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/thermal
-vendor/bin/thermal_manager
 vendor/bin/thermalloadalgod
 vendor/etc/.tp/.ht120.mtc
-vendor/etc/.tp/.thermal_policy_00
-vendor/etc/.tp/.thermal_policy_03
-vendor/etc/.tp/.thermal_policy_05
-vendor/etc/.tp/.thermal_policy_08
-vendor/etc/.tp/thermal.conf
-vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/init.thermal.rc
-vendor/etc/init/init.thermal_manager.rc
 vendor/etc/init/init.thermalloadalgod.rc
 vendor/etc/fstb.cfg
 vendor/lib/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal_hal.so
-vendor/lib64/libmtcloader.so
 
 # Trusted Execution Environment (TEE) - Trustonic
 vendor/bin/hw/vendor.trustonic.tee@1.1-service
@@ -767,13 +758,28 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS) - From 250115V1871
 vendor/bin/hw/vtservice_hidl
+vendor/bin/ipsec_mon
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
+vendor/bin/volte_imcb
+vendor/bin/volte_imsm_93
+vendor/bin/volte_md_status
 vendor/bin/volte_rcs_ua
+vendor/bin/volte_ua
 vendor/etc/init/init.vtservice_hidl.rc
+vendor/etc/init/init.volte_imcb.rc
+vendor/etc/init/init.volte_imsm_93.rc
+vendor/etc/init/init.volte_md_status.rc
+vendor/etc/init/init.volte_stack.rc
+vendor/etc/init/init.volte_ua.rc
+vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/lib/libipsec_ims_shr.so
+vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
+vendor/lib/libvolte_core_shr.so
+vendor/lib/libvolte_xdmc_shr.so
+vendor/lib/libvt_custom.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
