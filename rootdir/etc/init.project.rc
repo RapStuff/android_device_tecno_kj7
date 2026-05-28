@@ -60,13 +60,7 @@ on property:sys.boot_completed=1
 #SPD: modify for swap zram write-back by shuang.zhou at 20201020 end
 
 
-# start mmstat
 on property:sys.boot_completed=1
-    mkdir /sys/kernel/tracing/instances/mmstat 711
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
-    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
-    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
     #SPD: modify cpuctl cpu.shares and low watermark by shusheng.wan at 20240514 start
     write /dev/cpuctl/top-app/cpu.shares 5120
     write /dev/cpuctl/foreground/cpu.shares 4196

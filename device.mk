@@ -54,6 +54,10 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
+    audio.usb.default \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio_policy.stub \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
     libunwindstack.vendor \
@@ -93,7 +97,7 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.memtrack-service.mediatek-mali \
+    android.hardware.memtrack-service.mediatek-mali
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
@@ -187,7 +191,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Overlays
