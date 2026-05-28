@@ -882,6 +882,7 @@ vendor/lib64/hi5022q_mipi_raw_tuning.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libaacvibrator.so
 vendor/lib64/libacdk.so
+vendor/lib/libadpcmdec_mtk.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libappgamepq.so
