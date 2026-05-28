@@ -138,7 +138,8 @@ PRODUCT_PACKAGES += \
     libutils-v32
 
 PRODUCT_PACKAGES += \
-    libutilscallstack.vendor
+    libutilscallstack.vendor \
+    libprocessgroup_shim:64
 
 PRODUCT_PACKAGES += \
     ANGLE
