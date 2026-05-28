@@ -861,3 +861,10 @@ vendor/lib64/vendor.trustonic.tee@1.1.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib/libudf.so
 vendor/lib64/libudf.so
+
+# Restored vendor-only interface libs
+vendor/bin/hw/vendor.transsion.performance.sched@1.0-service
+vendor/etc/init/vendor.transsion.performance.sched@1.0-service.rc
+vendor/lib64/vendor.transsion.performance.sched@1.0.so
+vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
