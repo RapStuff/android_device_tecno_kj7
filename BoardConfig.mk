@@ -92,7 +92,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH)/libinit:init_KJ5
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH)/libinit:init_KJ5)
 TARGET_RECOVERY_DEVICE_MODULES := init_KJ5
 
 # Boot image (GKI 5.10)
