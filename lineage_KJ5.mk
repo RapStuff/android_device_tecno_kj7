@@ -5,7 +5,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device makefile.
@@ -22,6 +22,6 @@ PRODUCT_BRAND := TECNO
 PRODUCT_GMS_CLIENTID_BASE := android-tecno
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="KJ5-OP-user 12 SP1A.210812.016 240607V1280 release-keys"
+    PRIVATE_BUILD_DESC="KJ5-OP-user 12 SP1A.210812.016 250115V1871 release-keys"
 
-BUILD_FINGERPRINT := TECNO/KJ5-OP/TECNO-KJ5:12/SP1A.210812.016/240607V1280:user/release-keys
+BUILD_FINGERPRINT := TECNO/KJ5-OP/TECNO-KJ5:12/SP1A.210812.016/250115V1871:user/release-keys
