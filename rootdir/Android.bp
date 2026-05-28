@@ -12,13 +12,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.cgroup.rc",
-    src: "etc/init.cgroup.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init.connectivity.rc",
     sub_dir: "init/hw",
@@ -79,4 +72,12 @@ prebuilt_etc {
     filename: "ueventd.rc",
     src: "etc/ueventd.mt6768.rc",
     vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.mt6768.rc",
+    src: "etc/init.recovery.mt6768.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+    recovery_available: true,
 }
