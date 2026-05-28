@@ -307,6 +307,7 @@ vendor/lib64/libmtkcam_sysutils.so
 vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/libmtkisp_metadata.so
+vendor/lib64/libnbaio_mono.so
 vendor/lib64/libpq_prot.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/fake_serial_yuv_IdxMgr.so
@@ -355,6 +356,21 @@ vendor/lib64/libwvhidl.so
 # Display firmware
 vendor/firmware/chipone_ts_fw_00.bin
 vendor/firmware/chipone_ts_fw_02.bin
+vendor/firmware/gt1151_default_firmware2.img
+vendor/firmware/gt9886_cfg_6781v01.bin
+vendor/firmware/gt9886_cfg_6785v96.bin
+vendor/firmware/gt9886_cfg_6785v99.bin
+vendor/firmware/gt9886_cfg_6853v01.bin
+vendor/firmware/gt9886_cfg_6873v01.bin
+vendor/firmware/gt9886_cfg_6877v01.bin
+vendor/firmware/gt9886_cfg_6885v01.bin
+vendor/firmware/gt9886_cfg_6885v1.bin
+vendor/firmware/gt9886_cfg_6885v9c.bin
+vendor/firmware/gt9886_cfg_6893v01.bin
+vendor/firmware/gt9886_cfg_90hz6785.bin
+vendor/firmware/gt9886_cfg_90hz6877.bin
+vendor/firmware/gt9886_cfg_90hz6885.bin
+vendor/firmware/gt9886_cfg_gt9885v1.bin
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
