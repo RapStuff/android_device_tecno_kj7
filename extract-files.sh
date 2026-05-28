@@ -70,9 +70,6 @@ function blob_fixup {
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
-        vendor/lib*/libmtkcam_stdutils.so)
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
-            ;;
         vendor/bin/hw/android.hardware.gnss-service.mediatek |\
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
@@ -83,6 +80,7 @@ function blob_fixup {
         system_ext/lib64/libsource.so)
             grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
+        vendor/lib64/libmtkcam_stdutils.so|\
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
