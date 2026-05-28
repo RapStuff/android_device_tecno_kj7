@@ -943,8 +943,6 @@ vendor/lib64/libhydra.so
 vendor/lib64/libhyperion_hap_ca.so
 vendor/lib64/libImageEval.so
 vendor/lib64/libimsg_log.so
-vendor/lib64/libkeymaster41.so
-vendor/lib64/libkeymaster4.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libkmsetkey.so
