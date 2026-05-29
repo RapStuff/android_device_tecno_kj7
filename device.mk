@@ -238,6 +238,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.c2-mtk-service \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
     libavservices_minijail.vendor \
