@@ -15,8 +15,8 @@ $(call inherit-product, device/tecno/kj7/device.mk)
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_KJ7
-PRODUCT_DEVICE := KJ7
+PRODUCT_NAME := lineage_kj7
+PRODUCT_DEVICE := kj7
 PRODUCT_MANUFACTURER := TECNO
 PRODUCT_BRAND := TECNO
 BOARD_VENDOR := TECNO
