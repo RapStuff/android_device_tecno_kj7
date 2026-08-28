@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.m
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
 # Inherit common MediaTek IMS
-$(call inherit-product, vendor/mediatek/ims/ims.mk)
+$(call inherit-product-if-exists, vendor/mediatek/ims/ims.mk)
 
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
