@@ -135,7 +135,6 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
-    android.hardware.memtrack-service.mediatek
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
@@ -242,7 +241,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2-mtk-service \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
     libavservices_minijail.vendor \
