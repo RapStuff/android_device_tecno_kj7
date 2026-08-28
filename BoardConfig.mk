@@ -245,3 +245,4 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 
 # Inherit the proprietary files
 include vendor/tecno/kj7/BoardConfigVendor.mk
+BOARD_SEPOLICY_VERS := 202504
