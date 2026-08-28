@@ -11,9 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/tecno/kj7/device.mk)
 
-$(call inherit-product, vendor/avium/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := avium_kj7
+PRODUCT_NAME := lineage_kj7
 PRODUCT_DEVICE := kj7
 PRODUCT_MANUFACTURER := TECNO
 PRODUCT_BRAND := TECNO
@@ -38,14 +38,14 @@ AVIUM_MAINTAINER ?= Rapli
 
 # Settings
 # Soc model name
-AVIUM_SETTINGS_SOC_MODEL_NAME ?= MediaTek Helio G99
+AVIUM_SETTINGS_SOC_MODEL_NAME ?= MediaTek Helio G99 Ultimate
 # Device code name
 AVIUM_SETTINGS_DEVICE_CODENAME ?= Spark 20 Pro+
 
 # GMS
 # WITH_GMS is a boolean flag to indicate 
 # whether to include Google Mobile Services (GMS) in the build.
-WITH_GMS ?= false
+WITH_GMS ?= true
 # LatinIMEGooglePrebuilt
 # Only works on vanilla builds,
 # GMS builds will use the Google IME from GMS.
@@ -60,4 +60,4 @@ AVIUM_FORCE_SET_FAKE_PROP ?= false
 # Blur Effect
 # The blur usually enabled on Android 16 QPR2.
 # If the blur not enabled, set to true to force enable blur for SystemUI.
-TARGET_FORCE_ENABLE_BLUR ?= false
+TARGET_FORCE_ENABLE_BLUR ?= true

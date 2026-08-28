@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/avium_kj7.mk
+    $(LOCAL_DIR)/lineage_kj7.mk
 
 COMMON_LUNCH_CHOICES := \
-    avium_kj7-user \
-    avium_kj7-userdebug \
-    avium_kj7-eng
+    lineage_kj7-user \
+    lineage_kj7-userdebug \
+    lineage_kj7-eng
