@@ -236,7 +236,6 @@ WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{NAN}, 1}}
 
 # HIDL / VINTF
 DEVICE_MANIFEST_FILE += $(CONFIGS_PATH)/vintf/manifest.xml
-ODM_MANIFEST_SKUS += nfc
 DEVICE_MATRIX_FILE += $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(CONFIGS_PATH)/vintf/device_framework_compatibility_matrix.xml \
