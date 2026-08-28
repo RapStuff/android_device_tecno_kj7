@@ -503,7 +503,7 @@ any software that is unrelated to enhancing end-user experience. -->
         </Activity>
     </Package>
     <!-- SPD:add for close mcdi by junjie.mou at 20230330 end-->
-    <!-- BSP:add for KJ5TPUBLIC-2430 by mengxia.li at 20231221 start-->
+    <!-- BSP:add for KJ7TPUBLIC-2430 by mengxia.li at 20231221 start-->
     <Package name="com.firsttouchgames.story">
         <Activity name="Common">
             <FPS value="Common">
@@ -512,8 +512,8 @@ any software that is unrelated to enhancing end-user experience. -->
             </FPS>
         </Activity>
     </Package>
-    <!-- BSP:add for KJ5TPUBLIC-2430 by mengxia.li at 20231221 end-->
-    <!-- BSP:add for KJ5TPUBLIC-2667 by xin.li7 at 20240311 start-->
+    <!-- BSP:add for KJ7TPUBLIC-2430 by mengxia.li at 20231221 end-->
+    <!-- BSP:add for KJ7TPUBLIC-2667 by xin.li7 at 20240311 start-->
     <Package name="com.firsttouchgames.dls7">
         <Activity name="Common">
             <FPS value="Common">
@@ -522,7 +522,7 @@ any software that is unrelated to enhancing end-user experience. -->
             </FPS>
         </Activity>
     </Package>
-    <!-- BSP:add for KJ5TPUBLIC-2667 by xin.li7 at 20240311 end-->
+    <!-- BSP:add for KJ7TPUBLIC-2667 by xin.li7 at 20240311 end-->
 <!-- SPD: add for app to 0-7 dex2oat cpus by fan.feng1 20230619 start -->
     <Package name="com.google.android.packageinstaller">
         <Activity name="com.android.packageinstaller.InstallInstalling">

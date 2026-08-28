@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/KJ5
-KERNEL_PATH := $(DEVICE_PATH)-kernel
+DEVICE_PATH := device/tecno/kj7
+KERNEL_PATH := kernel/tecno/kj7
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -69,11 +69,11 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := KJ5
+TARGET_BOOTLOADER_BOARD_NAME := KJ7
 TARGET_NO_BOOTLOADER := true
 
 # Display
-TARGET_SCREEN_DENSITY := 320
+TARGET_SCREEN_DENSITY := 480
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
@@ -92,8 +92,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH)/libinit:init_KJ5)
-TARGET_RECOVERY_DEVICE_MODULES := init_KJ5
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH)/libinit:init_KJ7)
+TARGET_RECOVERY_DEVICE_MODULES := init_KJ7
 
 # Boot image (GKI 5.10)
 BOARD_BOOT_HEADER_VERSION := 4
@@ -148,7 +148,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := KJ5
+TARGET_OTA_ASSERT_DEVICE := KJ7
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -244,4 +244,4 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
-include vendor/tecno/KJ5/BoardConfigVendor.mk
+include vendor/tecno/KJ7/BoardConfigVendor.mk

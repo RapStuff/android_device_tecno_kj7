@@ -167,6 +167,10 @@ PRODUCT_PACKAGES += \
     fastbootd:64
 
 # Fingerprint
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.fp.udfps=true \
+    ro.vendor.fp.udfps=true
+
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor:64
 
@@ -251,10 +255,10 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayKJ5 \
-    SystemUIOverlayKJ5 \
-    TetheringResOverlayKJ5 \
-    WifiResOverlayKJ5
+    FrameworksResOverlayKJ7 \
+    SystemUIOverlayKJ7 \
+    TetheringResOverlayKJ7 \
+    WifiResOverlayKJ7
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -354,7 +358,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.1.vendor \
     android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors@2.1-service.kj5-multihal
+    android.hardware.sensors@2.1-service.kj7-multihal
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -407,4 +411,4 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/tecno/KJ5/KJ5-vendor.mk)
+$(call inherit-product, vendor/tecno/KJ7/KJ7-vendor.mk)

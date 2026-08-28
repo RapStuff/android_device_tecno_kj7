@@ -5,7 +5,7 @@
 //
 
 runtime_resource_overlay {
-    name: "WifiResOverlayKJ5",
+    name: "WifiResOverlayKJ7",
     sdk_version: "current",
     resource_dirs: ["res"],
     vendor: true,

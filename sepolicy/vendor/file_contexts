@@ -16,7 +16,7 @@
 /data/vendor/fpsensor(/.*)?                                                                            u:object_r:vendor_fingerprint_data_file:s0
 
 # Sensors
-/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.1-service\.kj5-multihal                  u:object_r:hal_sensors_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.1-service\.kj7-multihal                  u:object_r:hal_sensors_default_exec:s0
 
 # Widevine
 /vendor/bin/hw/android\.hardware\.drm-service(-lazy)?\.widevine                                        u:object_r:hal_drm_widevine_exec:s0

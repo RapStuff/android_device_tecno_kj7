@@ -19,7 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/tecno/KJ5',
+    'device/tecno/kj7',
     'hardware/google/interfaces',
     'hardware/google/pixel',
     'hardware/mediatek',
@@ -82,7 +82,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'KJ5',
+    'KJ7',
     'tecno',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
